@@ -1,0 +1,54 @@
+{
+  "name": "com.dtxy.cwgx",
+  "displayName": "CWGXAPP",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "preStart": "cordova build -- --webpackConfig webpack.dev.js",
+    "start": "cordova run android --emulator -- --livereload",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cordova-android": "^8.1.0",
+    "cordova-ios": "^5.1.0",
+    "cordova-plugin-webpack": "^0.4.7",
+    "normalize.css": "^8.0.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-react": "^7.7.4",
+    "@babel/preset-typescript": "^7.7.4",
+    "@types/react": "^16.9.13",
+    "@types/react-dom": "^16.9.4",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "cordova-plugin-whitelist": "^1.3.4",
+    "css-loader": "^3.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^1.0.0",
+    "typescript": "^3.7.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-merge": "^4.2.2"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-webpack": {}
+    },
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  }
+}
