@@ -1,0 +1,18 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.dtxy.cwgx"
+    },
+    "cordova-plugin-webpack": {
+      "PACKAGE_NAME": "com.dtxy.cwgx"
+    }
+  },
+  "dependent_plugins": {}
+}
